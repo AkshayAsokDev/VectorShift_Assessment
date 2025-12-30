@@ -1,0 +1,26 @@
+
+.node-container {
+    background: #ffffff;
+    border: 1px solid black;
+    border-radius: 6px;
+
+    padding: 10px;
+    font-size: 13px;
+    min-width: 180px;
+}
+
+.node-header {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.node-body {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* styling for selected state using react flow */
+.react-flow__node.selected .node-container {
+  border-color: #2563eb;
+}
