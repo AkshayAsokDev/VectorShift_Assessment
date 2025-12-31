@@ -7,6 +7,9 @@
     padding: 10px;
     font-size: 13px;
     min-width: 180px;
+
+    position: relative;
+
 }
 
 .node-header {
@@ -19,6 +22,28 @@
     flex-direction: column;
     gap: 6px;
 }
+
+/* React Flow handle styling */
+.react-flow__handle {
+    width: 15px;
+    height: 15px;
+    background: #555;
+    border-radius: 50%;
+}
+
+/* Push handles to edges */
+.react-flow__handle-left {
+    left: -5px;
+}
+
+.react-flow__handle-right {
+    right: -5px;
+}
+
+.react-flow__handle {
+  z-index: 10;
+}
+
 
 /* styling for selected state using react flow */
 .react-flow__node.selected .node-container {

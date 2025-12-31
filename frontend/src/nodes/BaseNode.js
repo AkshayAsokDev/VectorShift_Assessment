@@ -5,7 +5,7 @@ import "../styles/nodes.css"
 
 export const BaseNode = ( {title, handles = {}, children}) => {
 
-
+    console.log(handles.inputs)
     return (
         // container
             // header
@@ -31,6 +31,7 @@ export const BaseNode = ( {title, handles = {}, children}) => {
                         id={handle.id}
                         type="target"
                         position={handle.position || Position.Left}
+                        style={handle.style}
                     />
                 ))
             }

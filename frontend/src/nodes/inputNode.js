@@ -23,7 +23,7 @@ export const InputNode = ({ id, data }) => {
       handles={{
         outputs: [
           {
-            id: `${id}-value`,
+            id: `${id}-${currName}`,
             position: Position.Right
           }
         ]
